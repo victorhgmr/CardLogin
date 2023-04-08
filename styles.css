@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter&family=Courgette&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+
+    display: grid;
+    place-items: center;
+    margin: 0;
+    font-family: 'Bitter', serif;
+    background-image: url("background.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+}
+
+
+.login{
+    margin: 20px;
+    width: 40vw;
+    height: 600px;
+    background: white;
+    border-radius: 50px;
+}
+
+.login-header{
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-header h2{
+    font-size: 60px;
+    font-family: 'Courgette', cursive;
+}
+
+.login-header h3{
+    opacity: 0.7;
+}
+
+.login-form-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 20px;
+    margin-bottom: 0;
+}
+
+
+input[type='password'] , input[type='text'] {
+    border: 2px solid black;
+    height: 55px;
+    padding: 0 2rem;
+    width: 100%;
+    outline: none;
+    transition: background .5s;
+    font-size: 18px;
+    border-radius: 100px;
+}
+
+button{
+    background: #3C71D6;
+    border: none;
+    border-radius: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    height: 55px;
+    cursor: pointer;
+}
+
+button:hover{
+    opacity: 0.9;
+}
+
+.checkbox {
+    display:  flex;
+    align-items: center;
+    gap: 7px;
+}
+
+input[typer='checkbox']{
+    width: 20px;
+    height: 20px;
+
+}
+
+@media (max-width:1350px) {
+    .login{
+        width: 40vw;
+    }
+}
+
+@media (max-width:1000px) {
+    .login{
+        width: 80vw;
+        
+    }
+}
+
+@media (max-width:567px) {
+    .login{
+        width: 90vw;
+    }
+}
